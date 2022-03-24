@@ -4,8 +4,4 @@ class Api::DoctorsController < ApplicationController
     render json: Doctor.all
   end
 
-  # def show
-  #   render json: Doctor.all
-  # end
-
 end
