@@ -1,9 +1,9 @@
-const NewAppointment = ()=> {
+const NewAppointments = ()=> {
   return (
     <div>
-      <h1>New Appointment</h1>
+      <h1>New Appointments</h1>
     </div>
   )
 }
 
-export default NewAppointment
+export default NewAppointments
