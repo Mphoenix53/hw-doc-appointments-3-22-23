@@ -1,9 +1,18 @@
-const Patient = ()=> {
+
+import useAxiosOnMount from "../hooks/useAxoisOnMount"
+
+const Patients = ()=> {
+  const {response, loading, error} = useAxiosOnMount('/api/patients')
+  if(loading) return <p>loading</p>
+  if(error) return <p>Error</p>
   return (
     <div>
-      <h1>Patients</h1>
+        <h1>Response</h1>
+        <p>{JSON.stringify(response)}</p>
+        <h1>Patients</h1>
+        <p>{JSON.stringify(response.data)}</p>
     </div>
   )
 }
 
-export default Patient
+export default Patients
